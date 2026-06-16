@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "colonia-felina",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "7373"],
+      "port": 7373
+    }
+  ]
+}

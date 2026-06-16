@@ -1,0 +1,72 @@
+<h2>¿Qué estructura le damos a la página?</h2>
+<p class="subtitle">Las 3 opciones son navegables con menú fijo. La diferencia está en cómo se organiza el contenido.</p>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#0f172a;padding:12px;font-family:monospace;font-size:11px;color:#94a3b8;min-height:160px">
+      <div style="background:#1e293b;padding:6px 10px;border-radius:4px;margin-bottom:8px;display:flex;gap:12px;color:#e2e8f0">
+        <span>🐱 ColoniaFelina</span><span style="margin-left:auto">Inicio · TNVR · Fotos · Adoptar · Contacto</span>
+      </div>
+      <div style="background:linear-gradient(135deg,#1e3a5f,#0f172a);border-radius:6px;padding:16px;text-align:center;color:#f8fafc;margin-bottom:8px">
+        <div style="font-size:16px;font-weight:bold">HERO GRANDE</div>
+        <div style="font-size:10px;color:#94a3b8">Foto de gatos + título + CTA</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px">
+        <div style="background:#1e293b;border-radius:4px;padding:8px;text-align:center;font-size:10px">Sobre TNVR</div>
+        <div style="background:#1e293b;border-radius:4px;padding:8px;text-align:center;font-size:10px">Galería</div>
+        <div style="background:#1e293b;border-radius:4px;padding:8px;text-align:center;font-size:10px">Adoptar</div>
+      </div>
+      <div style="background:#1e293b;border-radius:4px;padding:8px;text-align:center;font-size:10px;margin-top:4px">Contacto + Google Form</div>
+    </div>
+    <div class="card-body">
+      <h3>A — Una sola página (scroll)</h3>
+      <p>Todo en una página larga con anclas. Menú fijo arriba que lleva a cada sección. Ideal para móvil, muy fluido. <strong>Recomendado</strong> para maximizar retención: la gente ve todo sin tener que navegar.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#0f172a;padding:12px;font-family:monospace;font-size:11px;color:#94a3b8;min-height:160px">
+      <div style="background:#1e293b;padding:6px 10px;border-radius:4px;margin-bottom:8px;display:flex;gap:12px;color:#e2e8f0">
+        <span>🐱 ColoniaFelina</span><span style="margin-left:auto">Inicio · TNVR · Fotos · Adoptar · Contacto</span>
+      </div>
+      <div style="background:linear-gradient(135deg,#1e3a5f,#0f172a);border-radius:6px;padding:12px;text-align:center;color:#f8fafc;margin-bottom:8px">
+        <div style="font-size:14px;font-weight:bold">HERO + intro</div>
+        <div style="font-size:10px;color:#94a3b8">Solo home, links llevan a otras páginas</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px">
+        <div style="background:#1e293b;border-radius:4px;padding:8px;text-align:center;font-size:10px">→ tnvr.html</div>
+        <div style="background:#1e293b;border-radius:4px;padding:8px;text-align:center;font-size:10px">→ galeria.html</div>
+        <div style="background:#1e293b;border-radius:4px;padding:8px;text-align:center;font-size:10px">→ adoptar.html</div>
+        <div style="background:#1e293b;border-radius:4px;padding:8px;text-align:center;font-size:10px">→ contacto.html</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Multi-página clásico</h3>
+      <p>Home con resumen + páginas separadas por tema. Más organizado si el contenido crece, pero requiere más clics para llegar a la info. Mayor riesgo de que la gente abandone.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#0f172a;padding:12px;font-family:monospace;font-size:11px;color:#94a3b8;min-height:160px">
+      <div style="background:#1e293b;padding:6px 10px;border-radius:4px;margin-bottom:8px;display:flex;gap:12px;color:#e2e8f0">
+        <span>🐱 ColoniaFelina</span><span style="margin-left:auto">Inicio · TNVR · Fotos · Adoptar · Contacto</span>
+      </div>
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:6px">
+        <div>
+          <div style="background:linear-gradient(135deg,#1e3a5f,#0f172a);border-radius:6px;padding:10px;text-align:center;color:#f8fafc;margin-bottom:6px;font-size:12px">HERO</div>
+          <div style="background:#1e293b;border-radius:4px;padding:8px;font-size:10px;margin-bottom:4px">Sección TNVR</div>
+          <div style="background:#1e293b;border-radius:4px;padding:8px;font-size:10px">Galería (grid)</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <div style="background:#0ea5e9;border-radius:4px;padding:8px;font-size:10px;color:white;text-align:center">Adoptá</div>
+          <div style="background:#1e293b;border-radius:4px;padding:8px;font-size:10px">Stats<br/>12 gatos</div>
+          <div style="background:#1e293b;border-radius:4px;padding:8px;font-size:10px">Contacto</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Una página + sidebar fijo</h3>
+      <p>Contenido principal a la izquierda, columna lateral derecha con CTAs (adoptar, contacto, contador de gatos). Muy visual y moderno. Más complejo de hacer responsive.</p>
+    </div>
+  </div>
+</div>
