@@ -96,6 +96,7 @@ h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
 }
 .hero-inner { display: flex; flex-direction: column; align-items: center; }
 .hero-btns { display: flex; gap: 12px; justify-content: center; margin-bottom: 40px; flex-wrap: wrap; }
+.thanks-icon { font-size: 3rem; margin-bottom: 8px; }
 
 /* ===== KPIs ===== */
 .kpis {
